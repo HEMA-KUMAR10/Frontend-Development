@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+        <div class="calc">
+            
+            <input type="text" id="input-id" >
+       
+
+            <div class="buttons">
+                <button onclick="ac()" class="group-1">AC</button>
+                <button onclick="del()" class="group-1">DEL</button>
+                <button onclick="display('%')" class="group-1">%</button>
+                <button onclick="display('/')" class="group-2">/</button>
+                <button onclick="display(7)" class="group-3">7</button>
+                <button onclick="display(8)" class="group-3">8</button>
+                <button onclick="display(9)" class="group-3">9</button>
+                <button onclick="display('*')" class="group-2">*</button>
+                <button onclick="display(4)" class="group-3">4</button>
+                <button onclick="display(5)" class="group-3">5</button>
+                <button onclick="display(6)" class="group-3">6</button>
+                <button onclick="display('-')" class="group-2">-</button>
+                <button onclick="display(1)" class="group-3">1</button>
+                <button onclick="display(2)" class="group-3">2</button>
+                <button onclick="display(3)" class="group-3">3</button>
+                <button onclick="display('+')" class="group-2">+</button>
+                <button onclick="display(0)" id="zero">0</button>
+                <button onclick="display('.')" class="group-3">.</button>
+                <button onclick="equalTo()" class="group-2">=</button>
+
+            </div>
+        </div>
+    
+    
+<script>
+    var easy = document.getElementById("input-id")
+    function display(num){
+        
+    easy.value += num
+    }
+
+    function ac(){
+        easy.value = ""
+    }
+
+    function equalTo() {
+        var result = eval(easy.value)
+        easy.value = result
+    }
+
+    function del(){
+        easy.value = easy.value.slice(0,-1)
+    }
+</script>
+
+
+</body>
+</html>
