@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="login">
+        <h1>Login to coding Market</h1>
+        <p>Email or Username</p>
+        <input type="text" id="email">
+        <div ></div>
+        <p>Password</p>
+        <input type="text" id="pass">
+        <div class="button-container">
+        <div id="result"> </div>
+        <button onclick="check()">LOGIN</button>
+    </div>
+    </div>
+
+    <script>
+        function check(){
+
+            var email = document.getElementById("email").value
+            var pass = document.getElementById("pass").value
+            var result = document.getElementById("result")
+
+            var emailBox = document.getElementById("email")
+            var passBox = document.getElementById("pass")
+
+
+
+            if((email.length>=4) && (pass.length >=6 || pass.length <= 12) ){
+                result.innerHTML = "Login Successful"
+                result.className = "changes1"
+               
+            }
+
+            else if(email == '' || pass == ''){
+                result.innerHTML = "Unsuccessful login, the fields cannot be empty"
+                result.className = "changes"  
+                emailBox.className = "redBox"    
+                passBox.className = "redBox"          
+            }
+
+            else{
+                result.innerHTML = "Incorrect username or password. Please try again"
+                result.className = "changes"
+            }
+        }
+    </script>
+</body>
+</html>

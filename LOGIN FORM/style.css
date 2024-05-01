@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.login{
+    padding: 15px;
+    border: 2px solid black;
+    h1{ 
+        padding: 20px;
+    }
+    p{
+       
+    }
+    input{
+        width: 93%;
+        padding: 0px 10px;
+        height: 35px;
+        margin-bottom: 15px;
+        font-size: 14px;
+
+    }
+    .changes{
+        color: red;
+
+    }
+    .changes1{
+        color: green;
+    }
+
+    .redBox{
+        border: 2px solid red;
+    }
+
+    
+   
+    div{
+        
+    }
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    button{
+        
+        width: 90%;
+        padding: 15px;
+        background-color: rgb(64, 152, 64);
+        color: white;
+    }
+    button:hover{
+        scale: 1.1;
+    }
+}
