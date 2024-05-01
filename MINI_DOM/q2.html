@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ans2</title>
+</head>
+<body>
+ <div>
+    <button id="btn">Add Hello</button>
+    <div id="result"></div>
+</div>
+    <script>
+       
+        document.getElementById("btn").addEventListener("click", function() {
+            
+            printHello();
+        });
+
+        
+        function printHello() {
+            
+            var resultDiv = document.getElementById("result");
+            var heading= document.createElement("h1");
+            var textNode = document.createTextNode("Hello");
+            heading.appendChild(textNode);
+           resultDiv.appendChild(heading);
+        }
+    </script>
+</body>
+</html>

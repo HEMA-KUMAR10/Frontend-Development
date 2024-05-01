@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ans4</title>
+</head>
+<body>
+    <div id="title">
+        <br>
+        <br>
+    </div>
+    <button id="btn1">John</button>
+    <button id="btn2">Hari</button>
+    <button id="btn3">Praveen</button>
+
+    <script>
+        document.getElementById("btn1").addEventListener("click", function(){
+            printFirst();
+        });
+        document.getElementById("btn2").addEventListener("click",function(){
+            printSecond();
+
+        });
+        document.getElementById("btn3").addEventListener("click",function(){
+            printThird();
+        });
+
+        var button1 = document.getElementById("title");
+       function printFirst(){
+            let name = document.createElement("h1");
+            let textNode = document.createTextNode("John");
+            name.appendChild(textNode);
+            button1.appendChild(name);
+        }
+       function printSecond(){
+            let name = document.createElement("h1");
+            let textNode = document.createTextNode("Hari");
+            name.appendChild(textNode);
+            button1.appendChild(name);
+        }
+      function printThird(){
+            let name = document.createElement("h1");
+            let textNode = document.createTextNode("Praveen");
+            name.appendChild(textNode);
+            button1.appendChild(name);
+        }
+    </script>
+    
+</body>
+</html>
