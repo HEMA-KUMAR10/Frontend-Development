@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+
+    .left{
+        .left-img{
+            width: 300px;
+        }
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+
+        h1{
+            padding-left: 35px;
+            padding-bottom: 15px;
+        }
+
+        p{
+            padding-bottom: 5px;
+        }
+
+        span{
+            font-weight: bold;
+        }
+        
+        #name{
+            height: 35px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #email{
+            height: 35px;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        #password{
+            height: 35px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #confirm-password{
+            height: 35px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .remember{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+        }
+
+        #reg-button{
+            padding: 7px 0px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            color: white;
+            background-color: blueviolet;
+        }
+        #in-button:hover{
+        }
+
+        p{
+            a{
+                font-weight: bold;
+                color: blueviolet;
+                text-decoration: none;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    #sign-up{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        scale: 0;
+    }
+    .change-sign-up{
+        scale: 1;
+        
+    }
+    
+
+}
+
+ 
